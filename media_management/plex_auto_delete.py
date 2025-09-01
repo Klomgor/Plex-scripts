@@ -112,6 +112,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     plex_auto_delete(
-        ssn, args.Value,
+        ssn, ValueMapping[args.Value],
         args.LibraryName, args.SeriesName
     )
